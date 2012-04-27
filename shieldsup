@@ -1,0 +1,10 @@
+echo "Shields up!"
+cp shieldsup_hosts.txt /private/etc/.shieldsup_hosts_entries
+cd /private/etc
+# make copy of current hosts file
+cp hosts .hosts_shieldsdown
+
+#add shieldsup entries to hosts
+cat .shieldsup_hosts_entries >> hosts
+
+sudo dscacheutil -flushcache

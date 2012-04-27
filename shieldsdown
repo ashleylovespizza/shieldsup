@@ -1,0 +1,3 @@
+echo "Shields down. Go have a nice fuckaround on Facebook.  You've earned it."
+cd /private/etc
+cp .hosts_shieldsdown hosts
